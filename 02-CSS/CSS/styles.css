@@ -1,0 +1,338 @@
+/*------------------------------------------------------------------------------------------------
+ Dans cette feuille de style css je vais pouvoir définir l'apparence que je veux donner à ma page  
+ 
+ ### Syntaxe ###
+
+ element {
+     propriete:valeur;
+ }
+ ------------------------------------------------------------------------------------------------*/
+
+ /* ajout de google font  */
+
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+ /* Pour cibler plusieur balise avec un seul style, on met par exemple : a, h1, h3, */
+
+ .header {
+
+    font-family: 'Roboto', sans-serif; 
+    font-size: 15px; 
+    color:black;
+    background-color: rgba(24, 24, 23, 0.986) ;
+    border-radius: 5px 5px 0px 0px;
+    
+    
+        
+ }
+ 
+ .header a
+ 
+ {
+     text-decoration: none;
+     color: rgb(245, 245, 245);
+     /* les couleurs peuvent etre mis en mot clé : black red etc... en hexadécimal #f4f4f4 ou en décimal rgb: (000, 000, 000) */
+
+     font-size: 25px; 
+    font-weight: normal;
+
+     text-transform: uppercase; 
+    
+ }
+  /* -------------------------------------
+ 
+ Cibler via la classe de l'élément
+ 
+ NB une meme class peut etre présente plusieur fois sur une meme page
+ ------------------------------------------
+ ###Syntaxe###
+
+ 
+ .laclass {
+     propriete:valeur
+ }
+ 
+ ------------------------------------------
+ Tous les liens de la class .header en noir
+ tous ces liens non souligner 
+ et affiche en ligne via la propriété display
+ */
+
+.header ul {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ .header ul li{
+
+     
+    display: inline-block; 
+     /* width permet de definir la largeur du block */
+    width: 317px;
+    margin: 20px auto;
+     
+    text-align: center;
+
+    
+           
+    }
+/*  je souhaite que les liens est une couleurs quand on passe la souris */
+a:hover {
+
+    color: #F7CE3E
+
+}
+
+.current a {
+
+     color: #F7CE3E
+
+}
+
+.article {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*  pour cibler une ID il faut utiliser le #   pour cibler une classe utiliser le . 
+
+#monid{
+    propriété: valeur; 
+    
+}*/
+
+#page {
+/* definir la taille de la page */
+
+    width: 960px;
+
+/* margin <top/bottom> and <left/right> */
+
+    margin: 0 auto; 
+
+/* je rajoute a ma page un fond blanc */
+
+    background: #fff; 
+
+    margin: 80px auto; 
+
+/* border radius pour faire des arrondi d'arrete */
+    border-radius: 5px;
+
+/* faire une ombre  sur ma page  syntaxe offset x puis offset y puis blur radius  */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322) ;
+
+/* japplique une marge a la page  */
+
+    padding: 5px;
+
+    overflow: hidden;
+
+
+}
+
+body {
+
+
+    background-color: rgba(24, 24, 23, 0.226);
+   
+}
+
+.contenu h1 {
+
+    text-align: center; 
+
+    font-weight: normal; 
+
+    border-bottom: solid 1px #1A2930; 
+
+    font-family: 'Roboto';
+
+}
+
+
+
+.bandeauduhaut {
+
+    width: 100%;
+    height: 100px;
+    background: url(http://media0.giphy.com/media/hCJesc7ywdfry/giphy.gif)no-repeat;
+    background-size: cover;
+    background-position-y: -269px;
+    border-radius: 5px 5px 0 0;
+
+}
+
+/*  pour rendre des images responsive on utilise max widht */
+
+.contenu {
+
+    width: 100%; 
+    height: auto; 
+    float: left;
+
+/* decoration */
+
+}
+
+.illustration {
+
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+
+
+} 
+
+.illustration img {
+
+    max-width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.article {
+    width: 460px;
+    height: auto;
+    float: left;
+    margin: 0 10px 0 10px ;
+    text-align: justify;
+
+}
+
+
+.footer {
+
+    width: 100%; 
+    height: auto;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 0 0 5px 5px;
+}
+
+
+
+.gmap {
+
+    width: calc( ( 100% / 3 ) - 10px );
+    height: auto;
+    float: left; 
+    margin-left: 10px;
+}
+
+#map { 
+
+    border-radius: 5px;
+}
+
+.newsletter {
+    width: calc( ( 100% / 3 ) - 10px );
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+
+
+
+}
+
+
+.contact{
+    width: calc( ( 100% / 3 ) - 10px );
+    height: auto;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.contact fieldset {
+
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 255, 255);
+    height: 217px; 
+    color: #F7CE3E;
+    padding left: ;
+
+}
+
+.contact address a {
+    
+    
+        color: white;
+        text-align: justify;
+        text-decoration: none;
+} 
+    
+.contact address a:hover {
+
+
+    
+    text-decoration: underline;  
+
+}
+
+.contact address {
+     
+    color: white;
+    text-align: justify;
+       
+      
+}
+
+.contact h3{
+
+    font-size: 15px;
+    color: white;
+    margin: 10px 0 5px 0;
+
+}
+
+
+
+
+.newsletter form{}
+
+.newsletter fieldset {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 255, 255);
+    height: 217px; 
+    color: #F7CE3E
+}
+
+.newsletter input{
+    width: 90%;
+    height: 25px;
+    margin-bottom: 15px;
+    padding: 5px 12px;
+    
+}
+
+.newsletter input[type=submit]{
+
+    width: 100%;
+    border:0px;
+    height: 35px;
+    background: #F7CE3E;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.newletter legend{}
+
+
+
+
+
+
