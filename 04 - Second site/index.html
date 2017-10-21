@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    
+    <title></title>
+
+    <meta charset="utf-8">
+    
+    <meta name="description" content="une description unique pour chaque, en relation avec son thème">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+
+
+    <div class="page">
+    
+        <div class="topheader">
+
+
+
+        </div> <!-- end div top header -->
+
+        <header>
+
+            <nav>
+
+            </nav>  <!-- end nav -->
+
+        </header> <!-- end header  -->
+ 
+
+
+
+
+    </div>  <!-- end div class page  -->
+    <div id="projecteur">
+
+
+    </div>
+
+    <div class="page">
+        
+        <section>
+            
+            <aside>
+
+            </aside><!-- end aside -->
+            
+            <article>
+
+            </article><!-- end article -->
+
+            <div class="partenaires">
+
+
+            </div><!-- end div partenaires -->
+
+        </section> <!-- end section -->
+
+
+        <footer>
+
+
+                <div class="gmap">
+                <div id="map" style="width:100%;height:240px;background:yellow"></div>
+                
+                <script>
+                function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(49.44, 1.09),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.PLAN
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                }
+                </script>
+                
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONhMBzrQ7OkfyXqUfUFFZKOdm6vZSjd8&callback=myMap"></script>
+      
+            
+        </div> <!-- end div gmap -->
+        
+            <div class="newsletter">
+                
+
+                <form action="requestfornewsletter.php" id="newsletter" name="newsletter" method="POST">
+                    
+                    <fieldset> 
+                        <legend> <strong> Subscribe to our Newsletter</strong></legend>
+                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your last name">
+                        <input type="email" placeholder="Your e-mail" 
+                            required >
+                        <input type="submit" value="Subscribe">
+                    </fieldset>
+                </form>    
+            </div>
+       
+            <div class="contact">
+
+
+                    <Fieldset> <legend><strong>Get in touch</strong></legend>
+        
+                                                             
+                                <h3><em>F 1.1 Shop</em></h3>                      
+                                <address> </br><a href="tel:+330652253578"><i class="fa fa-phone" aria-hidden="true"></i> 06 52 25 35 78</a> <br>
+                                <a href="mailto:h.y.mokrani@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> H.y.mokrani@gmail.com</a><br>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> 12 Rue du champ des oiseaux <br>
+                                     76000 Rouen <br>
+                                     FRANCE
+                                    </address>
+                                    
+                    </Fieldset>
+            </div>  <!-- end div contact -->
+
+        </footer>
+
+
+
+    </div> <!-- end div page -->
+
+</body>
+
+
+</html>
