@@ -231,7 +231,7 @@ padding-bottom: 6%;
 
     width: 100%;
     height: auto;
-    
+    -webkit-animation: 
 }
 
 #projet ul li img:hover {
@@ -249,6 +249,7 @@ padding-bottom: 6%;
 footer {
 
     padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 footer hr {
@@ -271,7 +272,18 @@ footer input {
 
 }
 
-footer input[type="submit"]{
+input[type="submit"]{
 
-    
+    width: 52.5%;
+    padding: 1%;
+    border: 0;
+    background: #bfbca5;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+input[type="submit"]:hover {
+
+    background-color: #3F3E37;
 }
