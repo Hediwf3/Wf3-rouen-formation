@@ -1,0 +1,25 @@
+.rectangle {
+
+float: left;
+width: 500px;
+height: 750px;
+background-color: black;
+}
+
+
+body {
+
+
+    width: 1000px;
+    max-width: 1000px;
+}
+
+.carre1, .carre2, .carre3, .carre4, .carre5, .carre6 {
+
+float: left;
+width: 250px;
+height: 250px;  
+background-color: red ;  
+
+}
+
