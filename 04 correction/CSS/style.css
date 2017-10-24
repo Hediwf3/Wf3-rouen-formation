@@ -1,0 +1,367 @@
+body {
+
+    background: #151515;
+
+}
+
+
+h1, h2, h3, h4 {
+
+    font-family: 'Lato', sans-serif; 
+}
+
+/* page --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.page {
+
+/* Dimension et positionement */
+
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+
+    /* Décoration */
+    margin: 40px auto; 
+
+    /*  est equivalent a margin top 40px
+    bottom 40px
+    lef right auto  */
+
+}
+
+.page > p {
+
+    color: #fff; 
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* topheader ---------------------------------------------------------------------------------------------------------------------------------- */
+.topheader {
+
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-image: linear-gradient(180deg, #FFF, #EEE);
+    border-top-left-radius: 5px; 
+
+}
+
+.topheader p {
+
+    font-family: 'Lato', sans-serif;
+    float: right;
+    margin: 0;
+    line-height: 28px;
+    margin: 0 10px 0 0;
+
+}
+
+.topheader p a {
+
+    color: #78356b;
+    text-decoration: none;
+
+}
+
+.topheader p a:hover {
+text-decoration: underline;
+}
+
+
+
+/* -------------------------------
+|                header           | 
+----------------------------------*/
+
+header {
+
+    width: 100%;
+    height: 130px; 
+    float: left;
+    background: #fff;
+
+}
+
+.logo {
+
+    width: calc(25% - 10px);
+    height: auto;
+    float: left;
+    margin: 10px 0 0 10px;
+    
+}
+
+.logo img {
+
+    height: 110px;
+    
+
+}
+
+/* object fit permet de mettre une image dans un contenaire pour ne pas changer limage permetde ne pas defoormer l'image
+quand je travail avec une image je precise soit la largeur soit la hauteur si je nai pas le  choix je peux utiliser la propriete object fit en sachant quelle n'est pas prise en charge par IE et utiliser polyfill
+*/
+
+/* -------------------------------
+|        Menu du header           | 
+----------------------------------*/
+
+
+nav {
+    width: 75%;
+    height: 100%;
+    float: left;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+nav ul li {
+
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+
+    margin-right: 0;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;   
+    font-family: 'Lato', sans-serif; 
+    line-height: 120px;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover  {
+color: #78356b;
+
+
+}
+
+nav ul li a.current {
+
+    color: #78356b;
+    
+}
+
+/* -------------------------------
+|        El projector             | 
+----------------------------------*/
+
+
+#projecteur {
+
+    width: 100%;
+    height: auto;
+    float: left;
+    background: #000;
+    
+}
+
+#projecteur img{
+
+    width: 100%;
+    }
+
+/* -------------------------------
+|       zone de contenu            | 
+----------------------------------*/
+
+
+
+section {
+
+width: 100%;
+height: auto;
+float: left;
+background-color: #FFF;
+margin-top: -4px;
+}
+
+
+section aside {
+
+    width: 50%;
+    height: auto;
+    float: left;
+}
+section aside img {
+
+        width: 100%;
+        max-width: 100%;
+
+}
+
+section article {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 1% 5% 0% 5%;
+    box-sizing: border-box;
+
+}
+section article h3 {
+
+    text-align: center;
+    font-weight: normal;
+
+}
+section article p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000; 
+    text-align: justify;
+
+}
+
+article p span{
+
+    color: #78356b;
+}
+
+/* -------------------------------
+|       partenaires               | 
+----------------------------------*/
+
+.partenaires {
+/* dimension et position */
+    width: 100%; 
+    height: auto;
+    float: left;
+    margin-top: -4px;
+    padding-bottom: 20px;
+    /* decoration */
+
+    background-image: linear-gradient(180deg,#EEE 0%, #FFF 30% )
+}
+
+.partenaires h2 {
+text-align: center;
+font-weight: normal;
+}
+.partenaires ul {
+    margin: 0px;
+    padding:0px;
+
+
+}
+.partenaires ul li {
+display: inline-block;
+width: calc(98%/4);
+text-align: center;
+}
+.partenaires ul li img {
+
+    max-width: 100%;
+    height: 100px;
+}
+
+/* -------------------------------
+|       footer                    | 
+----------------------------------*/
+
+footer {
+
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    background: #acabac; 
+    float: left;
+    
+
+}
+
+    .gmap {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+/* --
+    NEWSLETTER
+    -- */
+
+    .newsletter {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+    .newsletter form {}
+
+    .newsletter fieldset {
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 8px;
+        border: 2px solid #FFF;
+        color: #FFF;
+        height: 180px;
+    }
+
+    .newsletter legend {}
+
+    .newsletter input {
+        width: 91%;
+        height: 25px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+    }
+
+    .newsletter input[type=submit] {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        background: #FFF;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    } 
+
+/* --
+    CONTACT
+    -- */
+
+    .contact {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+    .contact h3 {
+        color: #FFF;
+        padding-left: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: normal;
+    }
+    .contact address {
+        color: #FFF;
+        padding-left: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .contact address strong {
+        font-size: 20px;
+    }
+    .contact address a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .contact address a:hover {
+        text-decoration: underline;
+    }

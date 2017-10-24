@@ -1,0 +1,131 @@
+body{
+
+font-family: 'Roboto Slab', sans-serif;
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+float: left;
+background: #151515;
+color: white;
+}
+
+.page {
+
+    width: 75%;
+    height: 980px;
+    float: left;
+   
+}
+
+.page p, a {
+
+    vertical-align: middle;
+}
+
+
+.bg {
+
+
+    height: 980px;
+    width: 15%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1000px;
+    
+    
+}
+
+.bg a{
+
+    text-decoration: none;
+    color: white;
+    padding-left: 7%;
+    font-size: 20px;
+}
+
+.bg a:hover {
+
+    text-decoration: line-through;
+    color: rgba(255, 254, 254, 0.664);
+}
+
+
+.infoprojetsup {
+
+    
+    
+    width: 100%;
+    float: left;
+   
+}
+
+.infoprojetsup p {
+
+    padding-left: 7%;
+    font-size: 17px;
+}
+
+.infoprojetsup p:first-child{
+
+    text-decoration: underline;
+}
+
+.titreprojet {
+
+    width: 100%;
+    float: left;
+    
+    
+
+}
+
+.titreprojet p a{
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 7%;
+}
+
+.ijf{
+    width: 100%;
+    float: left;
+
+}
+
+.ijf p {
+
+    padding-left: 7%;
+    font-size: 17px;
+
+
+}
+
+.ijf p:first-child{
+
+    text-decoration: underline;
+}
+
+
+.bb {
+    width: 100%
+}
+
+.bb a{
+
+    text-decoration: none;
+    color: white;
+    padding-left: 7%;
+    font-size: 20px;
+
+
+}
+
+.bb a:hover {
+
+    text-decoration: line-through;
+    color: rgba(255, 254, 254, 0.664);
+
+}

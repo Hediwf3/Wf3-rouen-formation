@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<!-- start head ********************************************************************************************************************************************************
+******************************************************************************************************************************************************************** -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Acceuil | Campus Saint-Marc</title>
+
+
+        <!--  pour regler le probleme des affichages sur different navigateur on peut utiliser 
+            1-Les feuilles de reset CSS
+
+            (taper sur google reset CSS copier le code et le mettre dans le style css (l'idée est de remettre a ZERO 
+            toutes les marges et ce sera a nous de definir les marges )) 
+        
+            2- Normalize CSS est une alternative qui fait en sorte que toutes les valeurs soit identiques sur toute les valeurs 
+            (taper normalize sur google telecharger le CSS et le mettre dans le dossier CSS)-->
+
+        <link rel="stylesheet" href="./CSS/normalize.css">        
+        <link rel="stylesheet" href="CSS/style.css">
+
+         <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+        <!-- Font awesome-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+    </head>
+
+<!-- end head ********************************************************************************************************************************************************
+******************************************************************************************************************************************************************** -->
+
+
+
+
+
+
+
+
+<!-- start body ********************************************************************************************************************************************************
+******************************************************************************************************************************************************************** -->
+    <body>
+    
+        <!-- le contenu de ma page -->
+
+        <div class="page"> <!-- debut class page --------------------------------------------------------------------------- --> 
+
+            <p><strong>Campus Saint-Marc</strong> | 7 écoles au coeur de Rouen</p>
+
+           
+           
+            <div class="topheader">
+
+                <p>
+                
+                    Espace Clients :
+                    <a href="#">Connexion</a> | 
+                    <a href="#">Inscription</a>
+                </p>
+
+            </div> <!-- fin topheader-->
+
+            
+            <!-- Header -->
+            <header>
+
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logos-csm--2-.jpg" alt="Logo du Campus Saint-Marc"></a>
+                </div> <!-- end logo -->
+
+                <!-- nav>ul>li*3>a[href=#] -->
+
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="current">Acceuil</a></li>
+                            <li><a href="#">Présentation</a></li>
+                            <li><a href="#">Nos Formations</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                
+
+            </header>
+
+
+        </div> <!-- fin de la class page ------------------------------------------------------------------------------------ --> 
+
+        <!-- projecteur ------------------------------------------------------------------ -->
+
+
+        <div id="projecteur">
+
+            <img src="./img/bandeau-saint-marc.jpg" alt="bandeau saint marc">
+
+        </div>
+
+        <div class="page">
+
+           <section>
+               <aside>
+                   
+                    <img src="img/illustration.jpg" alt="campus saint marc">
+               </aside>
+
+               <article>
+
+                    <h3>Le Campus Saint-Marc</h3>
+                    <p>« 80 % des métiers d’aujourd’hui auront disparu dans 20 ans » disent les experts.</p>
+                    
+                    <p>Les métiers du <span>management</span>, du <span></span>marketing</span>, de la <span>santé</span>, du<span>bien être</span> survivront mais <u>les pratiques vont significativement évoluer...</u> C’est la conviction du Campus Saint Marc. Hyper connexion, dématérialisation, mondialisation : l’environnement dans lequel nous vivons nous amène sans cesse à <span>découvrir de nouveaux outils</span>, à concevoir de nouveaux process.</p>
+                    
+                    <p>Dans un tel contexte, <u>il faut former des esprits créatifs, flexibles et entreprenants.</u> Les dernières innovations du campus saint marc <span>vont précisément dans ce sens</span> avec le lancement de l’accélérateur de startups   <span>NFactory</span>.</p>
+               
+                </article>
+
+                <div class="partenaires">
+
+                    <h2>Nos partenaires</h2>
+
+                    <ul>
+                        <li><img src="http://www.robotbutt.com/wp-content/uploads/2016/02/Burger-King-Logo-e1456502313833.png" alt="logo1"></li>
+                        <li><img src="http://cdn-2-theme.designhill.com/images/infographic/master_card.png" alt="logo2"></li>
+                        <li><img src="http://cdn-8-theme.designhill.com/images/infographic/bacardi.png" alt="logo3"></li>
+                        <li><img src="http://cdn-3-theme.designhill.com/images/infographic/twitter_new.png" alt="logo4"></li>
+                    </ul>
+
+
+                </div>  
+           </section>
+
+
+
+        </div>
+
+        <footer>
+
+            <div class="page">
+
+                    <div class="gmap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.84446611335574!2d1.1016075098758005!3d49.43825178317738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de7e33f06301%3A0xf222fa5aa4ab7587!2sCampus+Saint+Marc!5e0!3m2!1sfr!2sfr!4v1508406559046" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="newsletter">
+
+                            <form name="newsletter" 
+                                    action="newsletter.php"
+                                    method="POST">
+        
+                                <fieldset>
+                                    <legend>Newsletter</legend>
+                                    <input type="text" name="nom" placeholder="Nom">
+                                    <input type="text" name="prenom" placeholder="Prénom">
+                                    <input type="email" name="email" placeholder="Email" 
+                                        required>
+                                    <input type="submit" value="M'inscrire !">
+                                </fieldset>
+        
+                            </form>
+                        </div>
+
+                        <div class="contact">
+
+                            <h3>Contactez-nous</h3>
+                            <address>
+                                <strong>Campus Saint-Marc</strong><br>
+                                <a href="tel:+330232102501"><i class="fa fa-phone" aria-hidden="true"></i> 02 32 10 25 01</a><br>
+                                <a href="mailto:campussaintmarc@gmail.com">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> campussaintmarc@gmail.com
+                                </a> <br>
+                                18/28 Place Saint-Marc,<br>
+                                76000 Rouen<br>
+                                FRANCE
+                            </address>
+                       
+                        </div>
+
+
+            </div>
+
+
+
+        </footer>
+    
+
+        
+    </body>
+<!-- end body ********************************************************************************************************************************************************
+******************************************************************************************************************************************************************** -->
+
+</html>
