@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed');
+
+body {
+
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: #151515;
+}
+
+
+/* -----------------------
+         Page
+
+------------------------*/
+.page {
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #EEE;
+    height: auto;
+    float: left;
+    
+    
+}
+
+.page > p {
+
+    float: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    margin-left: 5%;
+    letter-spacing: 1px;
+}
+
+
+/* -----------------------
+         Topheader
+
+------------------------*/
+.topheader {
+
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+
+.topheader p {
+
+    float: right;
+    padding-right: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
+.topheader p a {
+
+    text-decoration: none;
+    color: #151515;
+}
+
+.topheader p a:hover {
+
+    text-decoration: underline;
+}
+
+/* -----------------------
+         header
+
+------------------------*/
+
+
+header {
+
+    width: 100%;
+    float: left;
+    height: 100px;
+    
+    
+}
+
+header nav{
+    background: #EEE;
+}
+
+header nav a img {
+
+    height: auto;
+    width: 12%;
+    padding-left: 2%;
+}
+
+header nav ul{}
+
+header nav ul li {}
+
+header nav ul li a {}
+
+header nav ul li a:hover {}
