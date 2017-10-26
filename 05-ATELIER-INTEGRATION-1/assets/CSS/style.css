@@ -1,0 +1,292 @@
+body {
+
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+/* -----------------------------------------------------------------Main--------------------------------------------------------- */
+
+main{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.mt-40 {
+
+    margin-top: 40px;
+}
+
+main > p {
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+
+main > p span {
+    text-decoration: underline;
+}
+
+/* -----------------------------------------Top header ------------------------------------------------------------------------------------------------------------- */
+
+
+.topheader {
+
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 50px;
+    float: left;
+
+}
+
+/* -----------------------------------------Traduction ------------------------------------------------------------------------------------------------------------- */
+
+.language {
+
+        width:25%;
+        height: 19px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 35px;
+        
+
+}
+
+.language p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: black;
+    text-transform: uppercase;    
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px; 
+}
+
+.language a:nth-child(2) {
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    background: url(../img/drapeau2.png) no-repeat;
+    text-indent: -5000px;
+    background-position: -71px;
+    width: 28px;
+}
+
+.language a:last-child {
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    background: url(../img/drapeau2.png) no-repeat;
+    text-indent: -5000px;
+    background-position: -107px;
+    width: 28px;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* -----------------------------------------Navigation------------------------------------------------------------------------------------------------------------- */
+
+.topheader a {}
+
+.topheader nav {
+
+    width: auto;
+    height: 100%;
+    float: right;
+    margin-right: 174px;
+}
+
+.topheader nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.topheader nav ul li {
+    display: inline-block;
+    
+}
+
+.topheader nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  #202020;
+    font-size: 16px;
+    text-decoration: none;
+    
+    line-height: 48px;
+    width: 100%;
+    margin: 0 10px;
+    font-weight: bold;
+    
+}
+
+.topheader nav ul li a:hover {
+
+        text-decoration: underline;
+}
+
+
+.topheader nav ul li.current a {
+
+    color: #3060a7;
+    text-decoration: underline;
+}
+
+.topheader nav ul li:nth-child(3) a {
+
+    color : #fe3224     ;
+}
+/* -----------------------------------------Projecteur------------------------------------------------------------------------------------------------------------- */
+
+
+.projecteur {
+
+    width: 100%;
+    height: 655px;
+    float: left;
+}
+
+.projecteur img {
+
+    width: auto;
+
+    height: auto;
+}
+
+/* -----------------------------------------bord et liseret------------------------------------------------------------------------------------------------------------- */
+
+
+.bandeau {
+
+    width: 100%;
+    height: 50px;
+    float: left;
+    background-color:  #fe3224;
+}
+
+.bandeau img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+     
+
+}
+
+/* -----------------------------------------bandeau du bas ------------------------------------------------------------------------------------------------------------- */
+
+.bandeaub {
+    background: -webkit-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -moz-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -o-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -ms-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    width: 1300px;
+    height: 121px;
+    float: left;
+}
+
+.bandeaub p {
+
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    
+}
+
+.line {
+
+    text-decoration: underline;
+}
+
+.red {
+
+    color: red;
+}
+
+.fleche1 {
+    display: block;
+    width: 147px;
+    height: 36px;
+    margin: 0 25px 0 305px ;
+    float: left;
+}
+
+.fleche2 {
+    display: block;
+    width: 147px;
+    height: 36px;
+    margin: 0 304px 0 25px ;
+    float: left;
+}
+
+.commencer {
+    background: -webkit-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -moz-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -o-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -ms-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: linear-gradient(180deg, #fe8e86 0%, #fe3224 100%);
+    width: 346px;
+    height: 37px;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    display: block;
+    float: left;
+    
+    
+    
+}
+
+.commencer a {
+
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    width: 300px;
+    height: 13px;
+    
+}
+
+.clic {
+    
+ display: block;    
+ float: left;
+ position: absolute;
+ margin-left: 765px;
+ margin-top: 27px;
+
+
+}
+
+
+/* -----------------------------------------footer ------------------------------------------------------------------------------------------------------------- */
+
+
+footer {
+    background: -webkit-linear-gradient(-90deg, #323232 0%, #222222 100%);
+    background: -moz-linear-gradient(-90deg, #323232 0%, #222222 100%);
+    background: -o-linear-gradient(-90deg, #323232 0%, #222222 100%);
+    background: -ms-linear-gradient(-90deg, #323232 0%, #222222 100%);
+    background: linear-gradient(180deg, #323232 0%, #222222 100%);
+    width: 100%;
+    height: 595px;
+    float: left;
+    border: 5px;
+}
