@@ -188,10 +188,12 @@ body {
 .illustration {
 
     width: 470px;
-    height: auto;
+    height: 344px;
     float: left;
     margin-right: 10px;
-
+    position: relative;
+    margin-bottom: 10px;
+   
 
 } 
 
@@ -200,6 +202,15 @@ body {
     max-width: 100%;
     margin-bottom: 10px;
 
+    
+}
+
+.loupe {
+
+    position: absolute;
+    width: 50px;
+    right: 10px;
+    bottom: 10px;
 }
 
 .article {
