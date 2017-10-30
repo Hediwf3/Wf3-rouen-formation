@@ -18,7 +18,7 @@
 
 .container-full > .row {
 
-    background-color: rgb(31,32,70);
+    background-color: #374f99;
 }
 
 .projecteur {
@@ -28,6 +28,15 @@
     margin: 10% auto;
     
 }
+
+.video {
+
+
+    width: 100%;
+    height: auto;
+    margin: 0% auto;
+}
+
 
 nav{
 
