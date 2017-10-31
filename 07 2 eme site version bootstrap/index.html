@@ -1,0 +1,204 @@
+<!--  en devellopement on travail en version normal en production quand on met les site sur internet on utilise les version minified qui sont compressé donc plus rapide -->
+
+
+<html lang="en">
+        <head>
+        
+            <meta charset="UTF-8">
+            
+            <title>Page de base</title>
+        
+            <meta name"viewport" content="width=device-width, init-scale=1">
+        
+            <!-- pour internet explorer : S'assurer que le navigateur utilise la derniere version du moteur de rendue -->
+        
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+            <!-- bootstrap Css feuille de style touojurs botstrap devant notre feuille css-->
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+            <!-- style CSS -->
+        
+            <link rel="stylesheet" href="./css/style.css">
+        
+            <!-- shiv -->
+        
+            <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+            <script srcd="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></sccript>
+        <![endif]-->
+        
+        </head>
+        <body>
+        
+            <!-- Contenu Html -->
+        
+        
+        <main class="container">
+
+
+                <div class="row">
+
+                    <div class="page col-xs-12">
+
+                            <nav class="col-xs-12">
+                                    
+                                                        <ul class="list-inline rp">
+                                                            <li><a href="#">Home</a></li>
+                                                            <li><a href="#nosvideos">About</a></li>
+                                                            <li><a href="#nosphotos">Contact</a></li>
+                                                        </ul>
+                                    
+                                    
+                            </nav>
+                                    
+                     
+                            <div class="titre col-xs-12">
+
+                                <h1>Focus 1.1</h1>
+
+                            </div>
+
+                    <section class="col-xs-12">
+
+                        <div class="container-fluid">
+
+                           <div class="row"> 
+
+                                <aside class="col-xs-12 col-sm-6">
+
+                                    <img src="https://ih0.redbubble.net/image.102559394.0988/flat,800x800,070,f.u2.jpg" alt="photographie noir et blanc parapluie jaune">
+
+                                </aside>
+                                <article class="col-xs-12 col-sm-6">
+                                    <h2>How to begin street photography</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime commodi, blanditiis non id harum odit mollitia omnis laudantium dicta nisi! At esse corporis, ab nobis asperiores maiores unde veniam consectetur.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde nostrum nemo mollitia non ipsa quas, dolorem voluptate illo! Ut delectus architecto corporis id temporibus! Accusantium fuga quas possimus repudiandae!
+                                    eveniet, accusamus, mollitia sed nesciunt quos reprehenderit perspiciatis! Lorem</p>
+                                    
+
+                                </article>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+                    <footer class="col-xs-12">
+                        <div class="container-full">
+
+                            <div class="row">
+
+                                    <div class="gmap col-xs-12 col-md-4">
+                                            <div id="map" style="width:100%;height:240px;background:yellow">
+                                            
+                                            <script>
+                                            function myMap() {
+                                            var mapOptions = {
+                                                center: new google.maps.LatLng(49.44, 1.09),
+                                                zoom: 10,
+                                                mapTypeId: google.maps.MapTypeId.PLAN
+                                            }
+                                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                                            }
+                                            </script>
+                                            
+                                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONhMBzrQ7OkfyXqUfUFFZKOdm6vZSjd8&callback=myMap"></script>
+                                        </div>
+                                        
+                                    </div> <!-- Fin div gmap -->
+
+                                    <div class="newsletter col-xs-12  col-md-4">
+                                            
+                    
+                                            <form>
+                                                    <div class="form-group">
+                                                      <label for="exampleInputEmail1">Email address</label>
+                                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="exampleInputPassword1">Password</label>
+                                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                    </div>
+                                                    
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox"> Check me out
+                                                      </label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-default">Submit</button>
+                                                  </form>   
+                                        </div>
+
+                                        <div class="contact col-xs-12 col-md-4">                                                        
+                                                                                                                          
+                                        <h3><em>F 1.1 Shop</em></h3>                      
+                                        <address> </br><a href="tel:+330652253578"><i class="fa fa-phone" aria-hidden="true"></i> 06 52 25 35 78</a> <br>
+                                        <a href="mailto:h.y.mokrani@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> H.y.mokrani@gmail.com</a><br>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i> 12 Rue du champ des oiseaux <br>
+                                        76000 Rouen <br>
+                                        FRANCE
+                                        </address>
+                                                                                            
+                                    </div>
+                                    
+                                                    
+
+                            </div>
+
+                        </div>
+
+
+
+                    </footer>
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+        </main>
+        
+        
+        
+        
+            <!-- on met les scripts a la fin du contenue !!!!!!  -->
+        
+        
+            <!--  librairie pour les cookies -->
+        <!-- script jquery -->
+                <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        
+        
+         <!-- Latest compiled and minified JavaScript permet d'utiliser les fonctionalité avancer de bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+        
+        
+        
+        
+        
+        
+        
+        </body>
+        </html>

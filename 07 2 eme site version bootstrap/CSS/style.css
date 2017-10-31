@@ -1,0 +1,214 @@
+.rp {
+    
+        padding: 0;
+    }
+    
+    .rm {
+    
+    
+        margin: 0;
+    }
+    
+    .mt-40 {
+    
+        margin-top: 40px;
+    }
+
+
+body {
+
+    background-image:url(http://blog.nightswapping.com/wp-content/uploads/2016/10/giphy-13.gif); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.page {
+
+    background: rgba(129, 129, 129, 0.877);
+    margin: 50 auto;
+    border-radius: 5px;
+    
+    /* faire une ombre  sur ma page  syntaxe offset x puis offset y puis blur radius  */
+    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.322) ;
+    
+    /* japplique une marge a la page  */
+    
+        padding: 5px;
+    
+        overflow: hidden;
+    
+}
+
+
+
+/* --------------------------------------------------------------------Nav----------------------------------------------------------- */
+
+
+nav {
+
+    background: url(http://media0.giphy.com/media/hCJesc7ywdfry/giphy.gif)no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    
+    
+    padding: 25px;
+    height: auto;
+    
+}
+
+nav ul{
+    text-align: center;
+    margin: 0;
+
+}
+
+nav ul li {
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    /* les couleurs peuvent etre mis en mot clé : black red etc... en hexadécimal #f4f4f4 ou en décimal rgb: (000, 000, 000) */
+    margin: 0 60px;
+    font-size: 25px; 
+    font-weight: normal;
+    line-height: 90px;
+    text-transform: uppercase; 
+
+}
+
+nav ul li a:hover {
+
+    color: #F7CE3E;
+    
+
+}
+/* titre------------------------------------------------------------------------------------------------------- */
+
+
+
+.titre {
+
+    text-align: center; 
+
+font-family: 'Roboto', sans-serif;
+
+color: white;
+
+margin: 25 auto;
+padding: 0;
+border-bottom: 5px solid #000000;
+
+
+}
+
+/* ------------------------------------------------------- section ------------------------------------------------ */
+
+section img{
+
+
+    width: 100%;
+    height: 100hv;
+    margin: 50px 0;
+}
+
+
+section article {
+
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 50px 0;
+    
+}
+
+section article p {
+
+    text-align: justify;
+}
+
+
+
+
+footer {
+
+    background: rgba(54, 54, 54, 0.877);
+
+    padding: 10;
+    border-radius: 0 0 5px 5px;
+
+}
+
+
+
+
+.form-group {
+
+
+    color: white;
+
+    
+}
+
+#map {
+
+    width: 100%;
+    
+    
+}
+
+
+
+.contact {
+
+
+    color: white;
+    
+}
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+        }
+    
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 992px) {
+
+            nav ul li {
+
+                display: list-item !important;
+            }
+    
+        }
+    
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+            nav ul li {
+                display: list-item !important;
+            }
+            
+        }
+    
+        /* Extra Small Devices, Phones */ 
+        @media only screen and (max-width : 480px) {
+
+            nav ul li {
+                display: list-item !important;
+            }
+            
+            
+    
+        }
+    
+        /* Custom, iPhone Retina */ 
+        @media only screen and (max-width : 320px) {
+    
+        }
+        
