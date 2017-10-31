@@ -18,23 +18,17 @@
 
 .container-full > .row {
 
-    background-color: #374f99;
+    background-color: #000000;
 }
 
-.projecteur {
 
-    width: 100%;
-    height: auto;
-    margin: 10% auto;
-    
-}
 
 .video {
 
 
     width: 100%;
     height: auto;
-    margin: 0% auto;
+    margin: 10% auto;
 }
 
 
@@ -85,7 +79,7 @@ nav ul li a {
 
     text-align: center;
 
-    background-color: rgb(31,32,70);
+    background-color: rgb(0, 0, 0);
     background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/blue-tech-geometric-shapes-motion-background-video-animation-hd-1920x1080_eg3tlvgcl__F0000.png);
     background-attachment: fixed;
     background-size: cover;
@@ -102,7 +96,7 @@ nav ul li a {
 #videosuite {
 
     text-align : center;
-    background-color: rgb(31,32,70);
+    background-color: rgb(0, 0, 0);
     background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/blue-tech-geometric-shapes-motion-background-video-animation-hd-1920x1080_eg3tlvgcl__F0000.png);
     background-attachment: fixed;
     background-size: cover;

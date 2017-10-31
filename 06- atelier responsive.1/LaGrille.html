@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!--  en devellopement on travail en version normal en production quand on met les site sur internet on utilise les version minified qui sont compressé donc plus rapide -->
+
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    
+    <title>Page de base</title>
+
+    <meta name"viewport" content="width=device-width, init-scale=1">
+
+    <!-- pour internet explorer : S'assurer que le navigateur utilise la derniere version du moteur de rendue -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap Css feuille de style touojurs botstrap devant notre feuille css-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- style CSS -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- shiv -->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script srcd="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></sccript>
+<![endif]-->
+
+
+<style>
+        
+        [class*="col-"] {
+
+            background-color: rgba(86, 61, 124, 0.15);
+            border: 1px solid rgba(86, 61, 124, 0.2);
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin-bottom: 5px;
+        }
+        
+        </style>
+
+</head>
+<body>
+
+    <!-- Contenu Html -->
+
+
+    <!-- le container va inclure l'ensemble de nos ligne et de nos colones
+    bootstrap propose deux container  .container et .container-full -->
+
+
+    <div class="container">
+
+
+<!-- Création d'une ligne  -->
+
+        <div class="row">
+
+            <!-- dans votre ligne ou rangé vous pouvez créer plusieurs colonnes mais rappelez vous toujours sur la bas de nos douzes colonnes -->
+<!-- une grande collone de 12 -->
+            <div class="col-lg-12">Col-lg-12</div>
+
+
+            <div class="col-lg-6">col-lg-6</div>
+            <div class="col-lg-6">col-lg-6</div>
+
+
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+<!-- je peux imbriquer mes rangées -->
+
+            <div class="col-lg-12">
+
+                <div class="row">
+                    <div class="col-lg-4">col lg 4</div>
+                    <div class="col-lg-8"> col lg 8</div>
+
+                </div>
+            </div>
+
+        </div> <!-- /row -->
+        <!-- plusieurs types de colonnes
+        
+        lg : large
+        md : medium
+        sm : small
+        xs : extra small 
+        
+        -->
+
+
+        <div class="row">
+
+            <div class="col-lg-6">col-lg-6</div>
+            <div class="col-lg-6">col-lg-6</div>
+
+            <div class="col-md-6">col-md-6</div>
+            <div class="col-md-6">col-md-6</div>
+
+
+            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-sm-6">col-sm-6</div>
+
+            <div class="col-xs-6">col-xs-6</div>
+            <div class="col-xs-6">col-xs-6</div>
+
+        </div>
+        <div class="row">
+
+            <!--  vous pouvez precisez pour chaque taille d'ecran le nombre de collones -->
+            <div class="col-lg-6 col-md-6 col-sm-3">col-lg-6 col-md-6 col-sm-3</div>
+            <div class="col-lg-6 col-md-6 col-sm-9">col-lg-6 col-md-6 col-sm-9</div> 
+        </div>
+        
+
+        <!-- a voir moi meme  
+        
+        col-xx-push : permet de decaler une colonne vers la droite 
+        col-xx-pull : permet de decaller une colonnes vers la gauche 
+        col xx offset permet de sauter des colonnes 
+        visible-xx permet de rendre visible une colonne pour un type d'ecran en particulier 
+        hidden-xx permpet de cacher une colonne pour un typed'écran en particulier 
+        
+        
+        -->
+
+        
+
+
+
+    </div> <!-- /container -->
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- on met les scripts a la fin du contenue !!!!!!  -->
+
+
+    <!--  librairie pour les cookies -->
+<!-- script jquery -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+ <!-- Latest compiled and minified JavaScript permet d'utiliser les fonctionalité avancer de bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+
+
+
+
+
+
+</body>
+</html>
