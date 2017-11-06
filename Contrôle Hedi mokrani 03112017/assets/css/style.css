@@ -1,0 +1,429 @@
+/* Polices par défaut : 
+font-family: Arial, sans-serif;
+
+Police des titres :
+font-family: 'Courgette', cursive;
+
+Etoiles dans les titres : 
+FontAwesome 4.6 => fa-star-o
+
+Couleurs : 
+barre de menus : #C55394
+hover menu : #EB43A3
+titre h1 : #C55394
+autres titres : #EB43A3
+footer : #E577B5
+noir : #333
+blanc : #FFF 
+
+MyUnicorn
+
+    Le principe
+    Nos licornes
+    Nous trouver
+
+Un jour, une licorne
+
+
+Le principe
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.
+
+    Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.
+
+
+Nos licornes
+
+    Lulu Confetty - Lapillon Magik - El Ninjacorn - Sweety Candy
+
+
+Nous trouver
+
+    Notre élevage de licornes est situé au :
+    18 Rue Geoffroy l'Asnier 
+    75004 Paris 
+    01.23.45.67.89
+
+Newsletter
+
+    Abonnez-vous simplement à notre newsletter mensuelle !
+
+*/
+
+
+
+/*  -------------------------------------------------------------- Body ---------------------------------------------------------------------------------- */
+
+
+body {
+
+    background: url(../img/background.png) repeat;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+#page {
+
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* -------------------------------------------------------------- Header --------------------------------------------------------------------------------- */
+
+header {
+
+    width: 100%; 
+    height: 70px;
+    background: #C55394;
+    
+}
+
+header > a {
+
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    line-height: 70px;
+
+    margin-left: 25px;
+
+}
+
+nav {
+
+float: right;
+
+height: 70px;
+}
+
+nav ul {
+
+    margin: 0 20px;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    height: 70px;
+    padding: 0 10px;
+}
+
+nav ul li a{
+    text-decoration : none;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 70px;
+    max-height: 100%;
+
+}
+
+nav ul li:hover {
+
+    background-color: #EB43A3;
+
+
+
+}
+
+
+/* -------------------------------------------------------------- titre --------------------------------------------------------------------------------- */
+
+
+.titre{
+
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    
+}
+
+.titre h1 {
+
+    font-family: 'Courgette', cursive;
+    color: #C55394;
+    height: 100%;
+    text-align: center;
+    line-height: 300px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+}
+
+.titre > img {
+
+
+    position: absolute;
+    top: 155px;
+    left: 780px;
+    width: 420px;
+    height: auto;
+    z-index: -1;
+}
+
+/* -------------------------------------------------------------- Contenue --------------------------------------------------------------------------------- */
+
+
+.contenu {
+    
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.322); 
+    overflow: hidden;
+    
+
+}
+
+
+
+/* -------------------------------------------------------------- Principe --------------------------------------------------------------------------------- */
+
+#principes {
+
+    max-width: 100%;
+    float: left;
+    margin: 50px 30px;
+
+
+}
+
+#principes h2 {
+
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    
+    }
+    
+
+#principes p {
+    
+    font-family: Arial, sans-serif;
+    
+    }
+    
+
+
+/* -------------------------------------------------------------- Licorne --------------------------------------------------------------------------------- */
+
+
+#licornes {
+    
+    width: 100%;
+    float: left;
+    margin: 50px 0;
+    float: left;
+    
+    }
+    
+#licornes h2 {
+    
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    margin-left: 40px;
+        
+    }
+        
+#licornes ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}   
+
+#licornes ul li {
+    display: inline-block;
+    width: 22%;
+    height: auto;
+    margin: 0 10px;
+}
+
+#licornes ul li figure {
+
+    margin: 0;
+    width: 281.59px;
+    height: 281.59px;
+    overflow:hidden;
+}
+
+
+#licornes ul li figure img {
+
+    max-width: 100%;
+    height: auto;
+    position: relative ;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    
+    -moz-transition: all 1s ease; /* Firefox */
+    
+    -o-transition: all 1s ease; /* IE 9 */
+    
+    -ms-transition: all 1s ease; /* Opera */
+    
+    transition: all 1s ease;
+
+    
+}
+
+#licornes ul li figure img:hover {
+    
+
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+
+    -moz-transform:scale(1.25); /* Firefox */
+    
+    -ms-transform:scale(1.25); /* IE 9 */
+    
+    -o-transform:scale(1.25); /* Opera */
+    
+    transform:scale(1.25);
+}
+
+#licornes figcaption {
+
+    background: rgba(0, 0, 0, 0.644);
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 282px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    top: 971px;
+}
+  
+
+
+/* -------------------------------------------------------------- Footer --------------------------------------------------------------------------------- */
+
+#noustrouver {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#noustrouver > h2 {
+
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    margin-left: 40px;
+
+}
+
+
+/* -------------------------------------------------------------- Gmap --------------------------------------------------------------------------------- */
+
+
+.gmap {
+
+    width: 50%;
+    float: left;
+    margin: 40px 10px 40px 40px;
+}
+
+
+
+/* -------------------------------------------------------------- contact --------------------------------------------------------------------------------- */
+
+
+.contact {
+
+float: right;
+width: 46%;
+margin-top: 45px
+}
+
+.contact h3 {
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+
+}
+
+.contact address {
+
+    font-family:  Arial, sans-serif;
+    font-style: normal;
+    margin-bottom: 35px;
+}
+
+
+
+/* -------------------------------------------------------------- Newsletter --------------------------------------------------------------------------------- */
+
+
+
+.newsletter {
+    float: right;
+    width: 46%;
+    margin-top: 45px
+}
+
+.newsletter h3 {
+
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+
+}
+
+.newsletter p {
+    font-family:  Arial, sans-serif;
+    font-style: normal;
+
+}
+
+.newsletter input:first-child{
+
+
+    height: 25px;
+    width: 200px;
+
+
+}
+
+
+.newsletter input:last-child {
+
+    width: 70px;
+    height: 30px;
+    background-color: #C55394;
+    color: white;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+
+/* -------------------------------------------------------------- Footer --------------------------------------------------------------------------------- */
+
+
+.foot {
+    
+
+    width: 100%; 
+    height: 50px;
+    background-color: #E577B5;
+    margin-top: 100px;
+}
+
+.foot p {
+
+    float: right;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-right: 20px;
+}
