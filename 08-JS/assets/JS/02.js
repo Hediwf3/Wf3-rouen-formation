@@ -57,7 +57,7 @@ var listeprenomsstagiaire = [" stagiaires 1 ", " stagiaires 2 ", " stagiaires 3"
 var listnomsstagiaire = ["nom stagiaires 1", "nom stagiaires 2", "nom stagiaires 3" ];
 
 var listtel = [" 0652253578 ", " 0752253578 ", " 0852253578 "]
-
+ 
 
 var annuairesdesstagiaires = [listeprenomsstagiaire, listnomsstagiaire, listtel]
 
