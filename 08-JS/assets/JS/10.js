@@ -198,7 +198,6 @@ for(let i = 0 ; i < NbElementDansMonTableau ; i++) {
     console.log(Prenoms[i]);
 }
 */
-/*
 
 var PremierTrimestre = [
     {
@@ -231,24 +230,35 @@ var PremierTrimestre = [
     }
 ];
 
+
+console.log(PremierTrimestre[0].moyenne);
+
+
+
 // faire apparaitre le nom et le prenom des etudiants 
 document.write("<ul>")
 for (var i = 0; i < PremierTrimestre.length; i++) {
     document.write("<li>" + PremierTrimestre[i].prenom + "</li>");
     document.write("<li>" + PremierTrimestre[i].nom + "</li>");
+
+
+   
+    
+
+    
     
   
 }
 
 document.write("</ul>")
-
+/*
 document.write("<ul>")
 for (var j = 0; j < 5; j++)
 
     document.write("<li>" + PremierTrimestre[j].moyenne + "</li>")
 
     document.write("</ul>")
-*/
+
 
 
 // faire apparaitre les matiere avec le notes a coté 
@@ -281,7 +291,7 @@ var Tableau ={
         
 }
 
-/*    */
+/*    
 
 for( i=0 ; i<3 ; i++){
     var nom = noms[i]
@@ -300,5 +310,6 @@ for( i=0 ; i<3 ; i++){
     document.write("</ul>");
 }
 
+*/
 
 
