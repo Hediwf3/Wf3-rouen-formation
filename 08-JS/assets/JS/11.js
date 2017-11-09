@@ -26,22 +26,43 @@ var emaillogin = prompt("Bienvenu, entrer votre adresse mail.");
 
 
     if (emaillogin == db[i].email){
+
         
+        var mailok = 1;
         
         // prompt mot de passe 
-        var mdp = prompt("entrer mdp");
+        var mot = prompt("entrer mdp");
 
-        if( mdp = db[i].mdp) {
+        if( mot = db[i].mdp) {
+
+
+            var motpok = 1; 
         //ecrire le message de bienvenu grace a la conca 
 
         // faire en sorte aue le nom corresponde a email login 
+            if(emaillogin == db[i].email){
 
+                document.write("Bienvenue " + db[i].prenom + " " + db[i].nom )
+            }
 
+            
+            
+        }
+        
+        if(motpok != 1){
 
+            alert("wrong mdp");
         }
 
 
     }
+    if(mailok != 1){ 
+
+        alert("wrong mail");
+
+    }
+
+    
 
     
 

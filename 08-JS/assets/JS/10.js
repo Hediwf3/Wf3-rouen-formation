@@ -231,26 +231,93 @@ var PremierTrimestre = [
 ];
 
 
-console.log(PremierTrimestre[0].moyenne);
 
+// Petite fonction de raccourci ( les flemmards .js )
 
+// cette fonction sert a ecrire w a la place de document.write
+function w(t){
 
-// faire apparaitre le nom et le prenom des etudiants 
-document.write("<ul>")
-for (var i = 0; i < PremierTrimestre.length; i++) {
-    document.write("<li>" + PremierTrimestre[i].prenom + "</li>");
-    document.write("<li>" + PremierTrimestre[i].nom + "</li>");
+    document.write(t);
+}
+// cette fonction sert a ecrire l a la place de console.log
+function l(e) {
 
-
-   
-    
-
-    
-    
-  
+    console.log(e);
 }
 
-document.write("</ul>")
+
+
+l(PremierTrimestre);
+
+// Je souhaite afficher la liste de mes étudiants
+
+w("<ol>");
+for ( i=0; i<PremierTrimestre.length; i++ ){
+
+    
+    // on intialise les valeur pour le calcul de la moyenne au debut de la boucle 
+
+    var NombreDeMatiere = 0; 
+    var somme = 0; 
+    
+    
+    // on recupere l'objet etudiant de l'iteration 
+    let Etudiant = PremierTrimestre[i];
+    //Aperçu dans la console 
+    l(Etudiant);
+
+    // Afficher le prenom et le nom d'un etudiant
+    w("<li>");
+    w(Etudiant.prenom + " " + Etudiant.nom);
+
+    //for in permet de chercher les matieres (les ligne d'un objet) dans un objet matiere est donc une valeur c'est pour ça quel est en [crochet]. 
+
+    w("<ul>");
+    for (let matiere in Etudiant.moyenne) {
+
+        NombreDeMatiere++;
+        somme += Etudiant.moyenne[matiere]
+
+        l(matiere);
+        l(Etudiant.moyenne[matiere]);
+        w("<li>");
+            w(matiere + " : " + Etudiant.moyenne[matiere])
+
+        w("</li>");
+        
+    } // -----------Fin de la boucle matiere
+    w("<li>");
+
+    w("<strong> Moyenne Generale : </strong>" + (somme/NombreDeMatiere).toFixed(2));
+
+    w("</li>");
+
+    w("</ul>");
+
+
+    w("</li>");
+}
+w("</ol>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 document.write("<ul>")
 for (var j = 0; j < 5; j++)
