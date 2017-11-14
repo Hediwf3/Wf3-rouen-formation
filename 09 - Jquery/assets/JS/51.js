@@ -11,42 +11,63 @@ $(function() {
         // -- Fonction ajouterContact(Contact) : Ajouter un Contact dans le tableau de Contacts, mettre à jour le tableau HTML, réinitialiser le formulaire et afficher une notification.
         function ajouterContact(UnContact) {
 
+           // ajouter un contact dans collection de contact 
+            CollectionDeContacts.push(UnContact);
+            // observer l'ajout des contacts 
+            console.log(CollectionDeContacts);
 
+            // on cache la phrase aucun cont
+
+            $('.aucuncontact').hide();
+
+            // mise a jour du html
+
+            $(`
+            <tr>
+                <td>${UnContact.nom}</td>
+                <td>${UnContact.prenom}</td>
+                <td>${UnContact.email}</td>
+                <td>${UnContact.tel}</td>
+            </tr>
+            `).appendTo($('#LesContacts').find('tbody'));
         }
     
         // -- Fonction RéinitialisationDuFormulaire() : Après l'ajout d'un contact, on remet le formulaire à 0 !
-        function reinitialisationDuFormulaire() {}
-    
-        // -- Affichage d'une Notification
-        function afficheUneNotification() {}
-    
-        // -- Vérification de la présence d'un Contact dans Contacts
-        function estCeQunContactEstPresent(UnEmail) {
+        function reinitialisationDuFormulaire() {
 
-            //booleen qui indique la presence ou non d'un contact 
-
-
-            let estpresent = false; 
-            // on parcour le tableau a lrecherce de correnspondance
-            for (let i = 0 ; i CollectionDeContacts.length; i++){ 
-
-                    if (UnEmail === CollectionDeContacts[i].email){
-
-                        estpresent = true;
-                        // si une correspondance est trouvé est present passe a vrai 
-                        break ;
-
-                    }
-
-            }
-            
-
-
-            
-
+// en jquery autre method 
+//$('#contact .form-control').val(" ");
+            $('#contact').get(0).reset();
         }
     
-        // -- Vérification de la validité d'un Email    
+    
+        // -- Affichage d'une Notification
+        function afficheUneNotification() {
+            $('.alert-contact').fadeIn().delay(3000).fadeOut();
+            
+        }
+    
+        // -- Vérification de la présence d'un Contact dans Contacts   8EME ETAPES  on doit parcourire le tableau pour trouver si l'email est present ou non 
+          // -- Vérification de la présence d'un Contact dans Contacts   8EME ETAPES  on doit parcourire le tableau pour trouver si l'email est present ou non 
+          function estCeQunContactEstPresent(UnEmail) {
+            
+                        // -- Booleen qui indique la présence ou pas d'un contact
+                        let estPresent = false;
+            
+                        // -- On parcourt le tableau à la recherche d'une correspondance
+                        for(let i = 0 ; i<CollectionDeContacts.length ; i++) {
+                            if(UnEmail === CollectionDeContacts[i].email) {
+                                // -- Si une correspondance est trouvé "estPresent" passe à VRAI (true)
+                                estPresent = true;
+                                // -- On arrête la boucle, plus besoin de poursuivre
+                                break;
+                            }
+                        }
+                        // -- On retourne le booleen
+                        return estPresent;
+                    }
+    
+        // -- Vérification de la validité d'un Email
         // : https://paulund.co.uk/regular-expression-to-validate-email-address
         function validateEmail(email){
             var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -63,70 +84,85 @@ $(function() {
                         TRAITEMENT DE MON FORMULAIRE
         -------------------------------------------------------------- */
     
-        // -- Détection de la soumission de mon Formulaire
+        // -- Détection de la soumission de mon Formulaire   1ER etapes !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! c'est un fonction anonyme
         $('#contact').on('submit', function(e) {
     
             // -- Voir le contenu de l'évènement
-        
-            // -- Stopper la redirection de la page
+            console.log(e);
+
+            // -- Stopper la redirection de la page  Car la page redirige vers PHP 2EME etapes 
             e.preventDefault();
-            // -- Récupération des champs à vérifier
+
+            // -- Récupération des champs à vérifier      3EME etapes 
             var nom, prenom, email, tel;
-            nom     =$('#nom')
-            prenom  =$('#prenom')
-            email   =$('#email')
-            tel     =$('#tel')
-    
-            // -- Vérification des informations...
-           /*
+            nom     = $('#nom');
+            prenom  = $('#prenom');
+            email   = $('#email');
+            tel     = $('#tel');
 
-           on peut utiliser un boleen pour eviter la repition else 
-            let mesInfoSontValides = true
-            ifletmesinfosontvalide) {
-
-                nom : nom.val()
-                prenom : prenom.val()
-                email : email .val()
-                tel : tel.val()
-            };
-
-            Estcequecontactest present 
-
-
-            */
-            let mesInfoSontValides = true
-
-           if(nom.val().length == 0) {
-            mesInfoSontValides = false;
-
-            alert("Le champ est erroné")
-            // le champ est incorrect 
-            // mesinfosontvalides = false;
-           }
-           if(prenom.val().length == 0) {
-            mesInfoSontValides = false;
-                        // le champ est incorrect 
-                       }
-            if(email.val().length == 0) {
-                        mesInfoSontValides = false;
-                                    // le champ est incorrect 
-                                   }
-            if(tel.val().length == 0) {
-                mesInfoSontValides = false;
-                                                // le champ est incorrect 
-                     }
- 
-
-                                else{     
-                                    $('tbody').append(nom.val());
-// -- ajouterContact si tous est correct.
-$('tbody').append(prenom.val());
-$('tbody').append(email.val());
-$('tbody').append(tel.val())
-           
+            // -- Vérification des informations...   4eme etapes 
+            let mesInformationsSontValides = true;
             
-            // -- Alert si erreur dans l'un des champs
+            // -- Vérification du Prénom
+            if(nom.val().length == 0) {
+                // -- Le Champ est incorrect, car il n'a pas été remplit...        5eme etapes 
+                mesInformationsSontValides = false;
+            }
+
+            // -- Vérification du Nom
+            if(prenom.val().length == 0) {
+                // -- Le Champ est incorrect, car il n'a pas été remplit...     5eme etapes 
+                mesInformationsSontValides = false;
+            }
+
+            // -- Vérification du Tel
+            if(tel.val().length == 0) {
+                // -- Le Champ est incorrect, car il n'a pas été remplit...    5eme etapes 
+                mesInformationsSontValides = false;
+            }
+
+            // -- Vérification du Mail                        5eme etapes 
+            if(!validateEmail(email.val())) {
+                mesInformationsSontValides = false;
+            }
+
+            if(mesInformationsSontValides) {     // ici mes info sont valise est true   6eme
+                
+                // -- Tous est correct, Préparation du Contact      7eme etapes on creer un objet contact chaque contact reprensente une ligne   
+                var Contact = {
+                    //cle     //valeur
+                    nom     : nom.val(),
+                    prenom  : prenom.val(),
+                    email   : email.val(),
+                    tel     : tel.val()
+                };
+
+                // -- Observons dans la console
+                console.log(Contact);
+
+                // -- Vérification avec EstCeQunContactEstPresent     8 eme etapes 
+                if(!estCeQunContactEstPresent(email.val())) {
+                    // -- Ajout du Contact
+
+                    ajouterContact(Contact); 
+                    reinitialisationDuFormulaire();
+                    afficheUneNotification();
+
+                } else {                    
+                    alert('ATTENTION\nCe contact est déjà présent.');
+                    reinitialisationDuFormulaire();
+                }
+
+            } else {
+                // -- Alert si erreur dans l'un des champs
+                alert('ATTENTION\nVeuillez bien remplir tous les champs.');
+            }       
     
         });
     
-    }); // -- Fin de jQuery READY ! 
+    }); // -- Fin de jQuery READY !
+
+
+
+// bonus faire en sorte que les donnee reste en utilisant local storage ou session storage 
+// mettre une fonction de recherche en raffraichissant la liste et laisssant juste le nom de la personne 
