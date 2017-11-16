@@ -3,6 +3,8 @@
     border-radius: 0px;
 
     font-family: 'Roboto', sans-serif;
+
+    margin: 0;
     
 }
 
@@ -15,6 +17,13 @@
 main {
 
     text-align: center;
+}
+
+
+header {
+
+    background-color: black;
+
 }
 
 /* --------------------------------------------------------------------------------media queries--------------------------------------*/ 
