@@ -1,3 +1,20 @@
+
+.rp {
+    
+        padding: 0;
+    }
+    
+    .rm {
+    
+    
+        margin: 0;
+    }
+    
+    .mt-40 {
+    
+        margin-top: 40px;
+    }
+
 .navbar-inverse {
 
     border-radius: 0px;
@@ -7,6 +24,34 @@
     margin: 0;
     
 }
+
+
+
+
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 100;
+    
+  }
+
+  nav ul li {
+
+    margin: 0 10px;
+  }
+
+  .fa-apple {
+      color : white !important;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
 
 .headernav { 
 
@@ -26,6 +71,171 @@ header {
 
 }
 
+
+section {
+
+
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+
+    padding: 0px;
+}
+
+
+
+section img { 
+
+    padding-top: 31px;
+    
+   
+
+}
+
+section article { 
+
+    margin-top: 65px;
+}
+
+section article h2 {
+
+    font-family: 'Roboto';
+    color:  #303236;
+    font-size: 36px;/* Approximation causée par une substitution de police */
+    font-weight: 300;
+}
+
+section article p {
+    font-family: Arial;
+    color:  #555555;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section article a{
+    font-family: Arial;
+    color:  #2b9efd;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+header {
+
+    background-color:  #141414;
+}
+
+header ul li { 
+
+    margin: 10px 10px;
+}
+
+.projecteur { 
+
+    background-color:#000000;
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.projecteur h2 { 
+
+    font-family: 'Roboto', sans-serif; 
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.projecteur h3 { 
+
+    font-family: 'Roboto', sans-serif; 
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.projecteur a {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0 25px;
+}
+
+.projecteur p{ 
+    font-family: Arial;
+    color:  #cccccc;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+.contact {
+
+
+    background-color: black;
+}
+
+.contact h3 {
+    font-family: 'Roboto';
+    color:  #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 50px auto;
+}
+
+
+.contact form input {
+    background-color:  #eeeeee;
+    font-family: Arial;
+    color:  #000000;
+   
+    
+}
+.contact form input::-webkit-input-placeholder {
+    
+    font-family: Arial;
+    color:  #000000;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.contact form textarea {
+    background-color:  #eeeeee;
+
+}
+
+.contact form textarea::-webkit-input-placeholder{
+    font-family: Arial;
+    color:  #000000;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.contact form button {
+
+    margin: 50px auto;
+    border-radius: 0px;
+}
+
+
+.copy{
+    background-color: #1e1e1e ;
+    color:  white;
+}
+
+.copy p {
+
+    line-height: 50px;
+    
+}
+
+.contact .container {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
 /* --------------------------------------------------------------------------------media queries--------------------------------------*/ 
 
 
@@ -37,17 +247,35 @@ header {
     
         /* Medium Devices, Desktops */
         @media only screen and (max-width : 992px) {
-    
-        }
+            section article {
+                
+                                    margin-bottom: 50px;
+                                }
+
+          header ul li {
+
+            width: calc(100% / 4)
+           }
+
+                                        }
+
     
         /* Small Devices, Tablets */
         @media only screen and (max-width : 768px) {
-    
+            section article {
+                
+                                    margin-bottom: 50px;
+                                }
+                                header ul li {
+                                    
+                                                width: calc(100% / 3)
+                                               }
+                               
         }
     
         /* Extra Small Devices, Phones */ 
         @media only screen and (max-width : 480px) {
-
+           
           
         }
     
