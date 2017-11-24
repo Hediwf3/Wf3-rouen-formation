@@ -40,16 +40,16 @@ function validateTel(tel){
 
 // Eccouter a quel moment est soumis le formulaire 
 
-$('#contact').on('submit', function(e){ 
+$('.contact').on('submit', function(e){ 
 
 e.preventDefault(); 
 
 
 // supprimer les differente erreurs 
 
-$('#contact .has-error').removeClass('has-error'); 
-$('#contact .text-danger').remove();
-$('#contact .alert-danger').remove();
+$('.contact .has-error').removeClass('has-error'); 
+$('.contact .text-danger').remove();
+$('.contact .alert-danger').remove();
 
 
 // Declarer les variables a vérifier 
