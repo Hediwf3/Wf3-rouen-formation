@@ -1,0 +1,66 @@
+body {
+
+
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+
+.more {
+
+   
+    background-color: black;
+    width : auto;
+    height: 100vh;
+  
+}
+.more a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+   
+    
+}
+
+.more a:hover{
+
+  
+        
+            text-decoration: line-through;
+            color: rgba(255, 254, 254, 0.664);
+        
+}
+.rp {
+    
+        padding: 0;
+    }
+    
+.rm {
+    
+    
+        margin: 0;
+    }
+
+.nextproject1 {
+
+    background-color: black;
+    text-align: center;
+}
+
+.nextproject1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+.nextproject1 a:hover {
+    
+        
+            text-decoration: line-through;
+            color: rgba(255, 254, 254, 0.664);
+        
+}
+    
