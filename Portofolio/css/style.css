@@ -1,37 +1,18 @@
 body {
 
-
+    
     font-family: 'Roboto Slab', sans-serif;
-}
-
-
-.more {
-
-   
-    background-color: black;
-    width : auto;
-    height: 100vh;
-  
-}
-.more a {
-
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-   
     
 }
 
-.more a:hover{
+.page {
 
-  
-        
-            text-decoration: line-through;
-            color: rgba(255, 254, 254, 0.664);
-        
+    overflow: hidden;
+    transition: background-color 600ms,color 600ms;
+    background-color: white;
+
 }
+
 .rp {
     
         padding: 0;
@@ -43,24 +24,156 @@ body {
         margin: 0;
     }
 
-.nextproject1 {
+    body #about {
+        
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            float: right;
+            margin: 10px;
+            
+    }
+    body #about:hover{
+        text-decoration: line-through;
+        color: rgba(14, 12, 12, 0.664);
+    }
+    body #back {
+        
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            float: left;
+            margin: 10px;
+            
+            
+    }
+    body #back:hover{
+        text-decoration: line-through;
+        color: rgba(14, 12, 12, 0.664);
+    }
 
-    background-color: black;
-    text-align: center;
+body .navbar {
+
+    background-color: transparent;
+
 }
+    
 
-.nextproject1 a {
-    text-decoration: none;
-    color: white;
+    main {
+        padding: 10%;
+    }
+
+    main h1{
+
+        font-size: 10em;
+    }
+
+    main img{
+        margin: 5% 0 5% 0;
+    }
+
+
+main .premier{
+
     font-size: 20px;
-    
-    
+    text-align: justify;
+    margin: 5% 0 5% 0;
+
 }
-.nextproject1 a:hover {
-    
-        
-            text-decoration: line-through;
-            color: rgba(255, 254, 254, 0.664);
-        
+
+main .table {
+
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 20px;
 }
-    
+   
+main .second {
+    margin: 5% 0 5% 0; 
+}
+main .dt-inner {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.pageinvert {
+
+    background-color: #0e0e0e;
+    color: white;
+}
+
+
+main .content p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 5% 0 5% 0;
+}
+
+@media(max-width:991px)
+{
+
+    body .navbar{
+        
+                background-color: #0e0e0e;
+               
+        
+            }
+            body #about {
+                color: white;
+        
+        
+            }
+            body #about:hover{
+        
+                color: rgba(206, 206, 206, 0.842)
+            }
+            body #back {
+                color: white;
+        
+        
+            }
+            body #back:hover{
+        
+                color: rgba(206, 206, 206, 0.842)
+            }
+
+}
+@media(max-width:768px)
+{
+
+}
+
+
+
+@media(max-width:480px)
+{
+
+    body .navbar{
+
+        background-color: #0e0e0e;
+       
+
+    }
+    body #about {
+        color: white;
+
+
+    }
+    body #about:hover{
+
+        color: rgba(206, 206, 206, 0.842)
+    }
+    body #back {
+        color: white;
+
+
+    }
+    body #back:hover{
+
+        color: rgba(206, 206, 206, 0.842)
+    }
+
+}

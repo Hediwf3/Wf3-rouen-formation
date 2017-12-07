@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<!--  en devellopement on travail en version normal en production quand on met les site sur internet on utilise les version minified qui sont compressé donc plus rapide -->
+
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    
+    <title></title>
+
+    <meta name"viewport" content="width=device-width, init-scale=1">
+
+    <!-- pour internet explorer : S'assurer que le navigateur utilise la derniere version du moteur de rendue -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap Css feuille de style touojurs botstrap devant notre feuille css-->
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="./assets/CSS/normalize.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+    <!-- shiv -->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script srcd="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></sccript>
+<![endif]-->
+
+</head>
+<body>
+
+
+<table border="1">
+
+    <caption>tableau de note</caption>
+
+<thead>
+    <tr>
+        <td></td>
+        <th scope="col">NOTE</th>
+        <th scope="col">MATIERE</th>
+        <th scope="col">DATE</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr>
+        <th scope="row">Hedi</th>
+        <td>10</td>
+        <td>Physique</td>
+        <td>10/11/2017</td>
+    </tr>
+    <tr>
+        <th scope="row">Lou</th>
+        <td>11</td>
+        <td>Physique</td>
+        <td>10/11/2017</td>
+    </tr>
+    <tr>
+        <th scope="row">Terry</th>
+        <td>12</td>
+        <td>Physique</td>
+        <td>10/11/2017</td>
+    </tr>
+
+
+
+</tbody>
+
+
+</table>
+
+<table border="1">
+        
+            <caption>tableau de note</caption>
+            <col>
+            <col>
+            <col>
+            <colgroup span="2"></colgroup>
+            <colgroup span="2"></colgroup>
+        <thead>
+                
+            <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+                <th colspan="2" scope="colgroup">NOTE Back</th>
+                <th colspan="2" scope="colgroup">NOTE Front</th>
+                
+            </tr>
+            <tr>
+                
+                <th scope="col">NOM</th>
+                <th scope="col">PRENOM</th>
+                <th scope="col">PHP</th>
+                <th scope="col">MYSQL</th>
+                <th scope="col">HTML5</th>
+                <th scope="col">CSS</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+            <th rowspan="5" scope="rowgroup">GROUPE 1</th>  
+
+           
+             
+            <td>MAIS</td>
+            <td>POURQUOI</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>  
+            </tr>
+            <tr>
+                    <td>MAIS</td>
+                    <td>POURQUOI</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>  
+                    </tr>
+                    <tr>
+                            <td>MAIS</td>
+                            <td>POURQUOI</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>  
+                            </tr>
+                            <tr>
+                                    <td>MAIS</td>
+                                    <td>POURQUOI</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>  
+                                    </tr>
+                                    <th rowspan="5" scope="row">GROUPE 2</th>  
+                                    
+                               <tr>
+                                
+                                    <td>MAIS</td>
+                                    <td>POURQUOI</td>
+                               <td>12</td>
+                               <td>13</td>
+                               <td>14</td>
+                               <td>15</td>  
+                               </tr>
+                               <tr>
+                                    <td>MAIS</td>
+                                    <td>POURQUOI</td>
+                                       <td>12</td>
+                                       <td>13</td>
+                                       <td>14</td>
+                                       <td>15</td>  
+                                       </tr>
+                                       <tr>
+                                            <td>MAIS</td>
+                                            <td>POURQUOI</td>
+                                               <td>12</td>
+                                               <td>13</td>
+                                               <td>14</td>
+                                               <td>15</td>  
+                                               </tr>
+                                               <tr>
+                                                    <td>MAIS</td>
+                                                    <td>POURQUOI</td>
+                                                       <td>12</td>
+                                                       <td>13</td>
+                                                       <td>14</td>
+                                                       <td>15</td>  
+                                                       </tr>
+        </tbody>
+        
+        
+        </table>
+
+
+
+
+
+        <select>
+            
+                <script type="text/javascript">
+                
+                    var prenom = ["Pierette", "Robert", "Valérie", "Vanessa", "Clément", "Pauline", "Paulette", "Roger", "Bertrand"];
+                    prenom.sort(); // attention aux min/maj et aux accents !
+                    
+                    var debutlettre = "";
+                    var lettre = "";
+                    
+                    
+                    for (var i = 0, len = prenom.length; i < len; i++) {
+                        valeur = prenom[i];
+                        if ((lettre=valeur.substr(0, 1)) != debutlettre)
+                        {
+                            if (debutlettre) document.write( '</optgroup>' );
+                            document.write( '<optgroup label="' + lettre + '">' );
+                            debutlettre=lettre;
+                        }
+                        document.write( '<option value="' + i + '">' + valeur + '</option>' );
+                    }
+                    
+                    document.write( '</optgroup>' );
+                    
+                    
+                </script>
+
+
+
+
+
+
+    <!-- on met les scripts a la fin du contenu !!!!!!  -->
+
+
+    <!--  librairie pour les cookies -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!-- Latest compiled and minified JavaScript permet d'utiliser les fonctionalité avancer de bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+
+<script>
+$(function(){
+    // Les flemmard.js
+   
+    function l(e){
+       console.log(e);
+   };
+   
+   var prenom = ["Pierette", "Robert", "Valérie", "Vanessa", "Clément", "Pauline", "Paulette", "Roger", "Bertrand"];
+l(prenom.length)
+   prenom.sort();
+   
+   var debut = $('<select id="prenom" name="prenom"></select>')
+
+
+
+   for(let i=0; i<prenom.length ; i++){
+
+    
+
+   
+
+    $(`
+	<optgroup label="${prenom[i].charAt(0)}">
+			<option value="${i}">${prenom[i]}</option>
+	</optgroup>
+	    
+`).appendTo(debut);
+
+
+
+}
+
+debut.appendTo($('body'));
+   
+   }); 
+
+</script>
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

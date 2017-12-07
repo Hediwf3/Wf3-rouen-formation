@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     
-    <title>Hedi Mokrani</title>
+    <title>Oh my Cat</title>
 
     <meta name"viewport" content="width=device-width, init-scale=1">
 
@@ -24,12 +24,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- style CSS -->
-   
+    <link rel="stylesheet" href="./assets/CSS/normalize.css">
 
     <link rel="stylesheet" href="./css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
     <!-- shiv -->
 
@@ -43,52 +42,14 @@
 
     <!-- Contenu Html -->
 
-
-
-<main class="container-full rp rm">
-
-<div class="row rp rm">
-
-<div class="container col-xs-1 more">
-    
-
-    <a href="moreinfoprojet1">More info</a>
-
-
-
-</div>
-
-<div class="container col-xs-11 principal rp rm">
-
-    <div class="container col-xs-12 nextproject1">
-
-        <div class="row">
-                <a href="nextproject">Next project</a>
-
-        </div>
-
-    </div>
-
-
-
-</div>
-
-<div class="container col-xs-1 about">
-    
-        
-    
-    
-    
-    </div>
-
-</div>
-
-
-
-
-</main>
-
-
+    <script src="//api.smarttech.com/lib/smartboard-1.1.0.js" onload="SBConfig()"></script>
+    <script>
+        SB.wantsTouches = true;
+        // set up tool change event handler
+        SB.onToolChange = function(evt) {
+            $("#toolColor").css("background", evt.colorAsHTML);
+        };
+    </script>
 
 
 
@@ -120,23 +81,7 @@ crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
 
 
-<script>
 
-
-$(function(){
-    // Les flemmard.js
-   
-    function l(e){
-       console.log(e);
-   };
-   
-  
-   
-   
-   
-   }); 
-
-</script>
 
 
 

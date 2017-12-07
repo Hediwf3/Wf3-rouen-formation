@@ -6,13 +6,65 @@ html, body{
 	
     }
 
+.rp {
+        
+            padding: 0;
+        }
+        
+.rm {
+        
+        
+            margin: 0;
+        }
+        
+section .about span a {
+            
+     float: right;
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     text-decoration: none; 
+     margin-right: 5%;  
+     margin-top: 1%     
+                
+}
+
+section .about span a:hover{
+    text-decoration: line-through;
+    color: rgba(255, 254, 254, 0.664);
+}
+section .contact {
+
+    position: fixed;
+    bottom: 15px;
+    right: 90px;
+
+}
+section .contact span a {
+    
+float: right;
+font-size: 25px;
+font-weight: bold;
+color: white;
+text-decoration: none; 
+margin: 10px
+}
+section .contact span a:hover{
+    text-decoration: line-through;
+    color: rgba(255, 254, 254, 0.664);
+}
+
+
 section .more{
     background-color: black;
     
     height: 100vh;
     text-align: center;
+    
    
 }
+
+
 
 section .more a {
 
@@ -20,23 +72,17 @@ section .more a {
     font-weight: bold;
     color: white;
     text-decoration: none;
-    
+     
 }
+
 section .more a:hover{
     text-decoration: line-through;
     color: rgba(255, 254, 254, 0.664);
 }
-.rp {
-    
-        padding: 0;
-    }
-    
-.rm {
-    
-    
-        margin: 0;
-    }
-    
+
+
+
+
     .infoprojetsup p {
         
             
@@ -56,11 +102,12 @@ section .more a:hover{
        
         
         .titre h2 a{
-            font-size: 120px;
+            font-size: 3em;
             color: white;
             font-weight: bold;
             text-decoration: none;
             height: auto;
+            display: inline-block;
             
             
         }
@@ -170,15 +217,29 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
 
 @media(max-width:991px)
 {
-	.item .carousel-desc , .item.item3 .carousel-desc{text-align:center;}
+	.item .carousel-desc , .item.item3 .carousel-desc{text-align:left;}
 	.item .carousel-desc p {width:80%;}
-	.item3 .col-md-6{width:100%; text-align:center;}
+	.item3 .col-md-6{width:100%; text-align:left;}
 }
 @media(max-width:768px)
 {
 .item .carousel-img img, .item.active .carousel-img img{max-height:155px;}
 .item  h2{font-size:30px; margin-top:0px;}
 .item .carousel-desc p{width:100%; font-size:12px;}
+
+section .more {
+    background-color: rgba(255, 254, 254, 0);
+    writing-mode: vertical-rl;
+    padding: 0;
+}
+.infoprojetsup p{
+    display: none;
+}
+.ijf p {
+    display: none;
+}
+
+
 }
 @media(max-width:480px)
 {

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Animated Vertical Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+<body>
+
+    <div class="row rp rm">
+    <div class="container-full page pageinvert">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="row rp rm fixed-content" >
+
+                <a id="back" href="index.html">Back to projects</a> <a href="" id="about">About me</a>
+         
+            
+
+        </div>
+            </div>
+        <div class="row rp rm">
+    <main class="container">
+        <div class="titre col-xs-12">
+        <h1>Projet numéros 1</h1>
+        <hr>
+        </div>
+        <div class="firstgrid col-xs-12">
+        
+        <div class="col-sm-8 rp rm premier">
+                <h2><span>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, voluptate assumenda. <br><br>Dolorem harum nobis cum modi quis, similique qui molestiae odit sed illum suscipit repellendus quisquam, ullam a blanditiis illo."</span></h2> <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam sed quibusdam natus, id animi tenetur quia, amet labore reiciendis autem ullam, dignissimos quaerat exercitationem delectus cum non quod ipsam.
+            At similique magnam facere quo voluptatibus eum. Perferendis et sunt labore recusandae architecto nemo similique. Labore distinctio praesentium cupiditate beatae omnis similique excepturi soluta expedita, voluptatum ea tempore laboriosam laudantium?
+            Praesentium, ab hic. Impedit asperiores blanditiis ducimus! Optio eos suscipit neque et temporibus natus modi dolorum, ullam ducimus voluptatum mollitia provident accusamus expedita. Suscipit doloribus alias itaque ut unde magnam.
+        </div>
+
+        <div class="col-sm-4 second rp rm">
+
+                <dl class="table">
+                    
+                                                <dt><span class="dt-inner">Project</span></dt>
+                                                <br><br>
+                                                <dd>Branding
+                                                <br>Clothing
+                                                <br>Campaigns
+                                                <br>Photography
+                                                <br>Video
+                                                <br>UX/UI</dd>
+                                                    <br><br>
+                                                <dt><span class="dt-inner">Client</span></dt>
+                                                <br><br>
+                                                 <dd><!--<a href="#" target="_blank" class="link-brand">-->Nfactory<!--</a>--></dd>
+                                            </dl>
+        </div>
+        </div>
+        <img class="img-responsive col-xs-12 rp" src="./assets/img/DSCF1299.JPG" alt="">
+
+        <div class="content">
+        <div class="col-xs-12 rp rm">
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam hic atque sit alias animi natus ducimus porro iusto saepe, rerum vel. Dignissimos, itaque explicabo! Alias eum facere voluptatibus fugiat magni?
+            Animi eveniet placeat expedita architecto suscipit dignissimos, libero labore vel deleniti perspiciatis minus tenetur aut praesentium ut totam harum fuga autem ex officiis optio quas atque! Hic numquam sit ea.
+            Laudantium quos officiis, a nemo facere ducimus sit ipsa exercitationem officia cupiditate non, natus qui cum sed odio itaque voluptatem ut minus provident consectetur labore? Aliquam dicta culpa quaerat sint.
+            Vitae repudiandae nulla non quas? Quas quo nobis doloribus deleniti, laboriosam animi dignissimos excepturi cumque est nulla! Voluptates perferendis ad quae eaque incidunt placeat necessitatibus, repellendus ea, deleniti ipsum officiis!
+            Modi ratione qui vero vel commodi, cumque, dolores, repudiandae facilis sapiente tenetur ad aperiam quisquam optio laboriosam mollitia ipsum repellat aut quas. Ipsa reiciendis eveniet unde ab nihil soluta dolorum.
+        </p>
+        </div>
+    </div>
+    </main>
+    </div>
+
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!-- Latest compiled and minified JavaScript permet d'utiliser les fonctionalité avancer de bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+<script>
+ 
+ $(document).ready(function(){
+
+
+var page = $(".page")
+
+
+$(page).on('mousewheel DOMMouseScroll', function(){
+    interval:1000
+    $(page).removeClass("pageinvert");
+   
+
+})
+
+
+ });
+
+
+</script>
+</body>
+</html>
