@@ -112,6 +112,18 @@ main .content p{
     margin: 5% 0 5% 0;
 }
 
+body .foot{
+    
+        background-color: #0e0e0e;
+        text-align: center;
+        color: white !important;
+      }
+    
+      body .foot p{
+        
+            margin: 10px 0px 10px 0px;
+          }
+
 @media(max-width:991px)
 {
 
@@ -141,8 +153,14 @@ main .content p{
             }
 
 }
+
+
 @media(max-width:768px)
 {
+    main h1{
+        
+                font-size: 7em;
+            }
 
 }
 
@@ -175,5 +193,8 @@ main .content p{
 
         color: rgba(206, 206, 206, 0.842)
     }
-
+    main h1{
+        
+                font-size: 5em;
+            }
 }

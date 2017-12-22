@@ -1,0 +1,565 @@
+body {
+
+    
+    font-family: 'Roboto Slab', sans-serif;
+    
+}
+
+.page {
+
+    overflow: hidden;
+    transition: background-color 600ms,color 600ms;
+    background-color: white;
+
+}
+
+.rp {
+    
+        padding: 0;
+    }
+    
+.rm {
+    
+    
+        margin: 0;
+    }
+
+    body #about {
+        
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            float: right;
+            margin: 10px;
+            
+    }
+    body #about:hover{
+        text-decoration: line-through;
+        color: rgba(14, 12, 12, 0.664);
+    }
+    body #back {
+        
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            float: left;
+            margin: 10px;
+            
+            
+    }
+    body #back:hover{
+        text-decoration: line-through;
+        color: rgba(14, 12, 12, 0.664);
+    }
+
+body .navbar {
+
+    background-color: transparent;
+
+}
+    
+
+    main {
+        padding: 10%;
+    }
+
+    main h1{
+
+        font-size: 10em;
+    }
+
+    main img{
+        margin: 5% 0 5% 0;
+    }
+
+
+main .premier{
+
+    font-size: 20px;
+    text-align: justify;
+    margin: 5% 0 5% 0;
+
+}
+
+main .table {
+
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 20px;
+}
+   
+main .second {
+    margin: 5% 0 5% 0; 
+}
+main .dt-inner {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.pageinvert {
+
+    background-color: #0e0e0e;
+    color: white;
+}
+
+
+main .content p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 5% 0 5% 0;
+}
+
+.info {
+
+    margin: 10% 0px 10% 0px;
+}
+
+.info article h2{
+
+    text-align: justify;
+    margin: 0 20px 0 20px;
+}
+
+.info img{
+
+    max-width: 100%;
+    
+}
+
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress.blue .progress-bar{
+    border-color: #888e92;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #888e92;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #888e92;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #888e92;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(70deg);
+        transform: rotate(70deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+  }
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  .timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px dashed #000000;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    
+  }
+  .timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+  .timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+  .timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #0e0e0e;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  .timeline-badge.primary {
+    background-color: #0e0e0e !important;
+  }
+  .timeline-badge.success {
+    background-color: #0e0e0e !important;
+  }
+  .timeline-badge.warning {
+    background-color: #0e0e0e !important;
+  }
+  .timeline-badge.danger {
+    background-color: #0e0e0e !important;
+  }
+  .timeline-badge.info {
+    background-color: #0e0e0e !important;
+  }
+  .timeline-title {
+    margin-top: 0;
+    color: inherit;
+  }
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+  }
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+
+
+
+body .foot{
+
+    background-color: #0e0e0e;
+    text-align: center;
+    color: white !important;
+  }
+
+  body .foot p{
+    
+        margin: 10px 0px 10px 0px;
+      }
+      .contact {
+        
+        
+            background-color: #0e0e0e;
+        }
+        
+        .contact h3 {
+            font-family: 'Roboto';
+            color:  #ffffff;
+            font-size: 50px;
+            line-height: 60px;
+            margin: 50px auto;
+        }
+        
+        
+        .contact form input {
+            background-color:  #eeeeee;
+            font-family: Arial;
+            color:  #0e0e0e;
+           
+            
+        }
+        .contact form input::-webkit-input-placeholder {
+            
+            font-family: Arial;
+            color:  #0e0e0e;
+            font-size: 20px;
+            font-weight: 400;
+            
+        }
+        
+        .contact form textarea {
+            background-color:  #eeeeee;
+        
+        }
+        
+        .contact form textarea::-webkit-input-placeholder{
+            font-family: Arial;
+            color:  #0e0e0e;
+            font-size: 20px;
+            font-weight: 400;
+        
+        }
+        
+        .contact form button {
+        
+            margin: 50px auto;
+            border-radius: 0px;
+        }
+        
+        
+        .copy{
+            background-color: #1e1e1e ;
+            color:  white;
+        }
+        
+        .copy p {
+        
+            line-height: 50px;
+            
+        }
+        
+        .contact .container {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+        
+@media(max-width:991px)
+{
+    .progress{ margin-bottom: 20px; }
+
+    body .navbar{
+        
+                background-color: #0e0e0e;
+               
+        
+            }
+            body #about {
+                color: white;
+        
+        
+            }
+            body #about:hover{
+        
+                color: rgba(206, 206, 206, 0.842)
+            }
+            body #back {
+                color: white;
+        
+        
+            }
+            body #back:hover{
+        
+                color: rgba(206, 206, 206, 0.842)
+            }
+
+}
+@media(max-width:768px)
+{
+    .info article h2{
+        
+            text-align: justify;
+            margin: 20px 0 20px 0;
+        }
+        main h1{
+            
+                    font-size: 7em;
+                }
+    
+}
+
+
+
+@media(max-width:480px)
+{
+
+    body .navbar{
+
+        background-color: #0e0e0e;
+       
+
+    }
+    body #about {
+        color: white;
+
+
+    }
+    body #about:hover{
+
+        color: rgba(206, 206, 206, 0.842)
+    }
+    body #back {
+        color: white;
+
+
+    }
+    body #back:hover{
+
+        color: rgba(206, 206, 206, 0.842)
+    }
+
+    main h1{
+        
+                font-size: 4em;
+            }
+
+}

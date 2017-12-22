@@ -16,6 +16,8 @@ html, body{
         
             margin: 0;
         }
+
+
         
 section .about span a {
             
@@ -25,8 +27,8 @@ section .about span a {
      color: white;
      text-decoration: none; 
      margin-right: 5%;  
-     margin-top: 1%     
-                
+     margin-top: 1%;
+     back          
 }
 
 section .about span a:hover{
@@ -215,6 +217,19 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
 .item3 p , item3.active p{visibility:hidden; opacity:0; transition:all 5s ease; width:100%;  }
 .item3.active p.animated{visibility:visible; opacity:1;  animation-delay:2.5s;}
 
+
+
+body .foot{
+    
+        background-color: #0e0e0e;
+        text-align: center;
+        color: white !important;
+      }
+    
+      body .foot p{
+        
+            margin: 10px 0px 10px 0px;
+          }
 @media(max-width:991px)
 {
 	.item .carousel-desc , .item.item3 .carousel-desc{text-align:left;}
