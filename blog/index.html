@@ -16,7 +16,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
 </head>
 
 
@@ -34,8 +34,7 @@
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <a href="#">
-                                <img style="width: 100px;" src="http://www.free-icons-download.net/images/factory-logo-icon-84733.png"
-                                    alt="logo factory blog">
+                                <img style="width: 100px;" src="http://www.free-icons-download.net/images/factory-logo-icon-84733.png" alt="logo factory blog">
                             </a>
                         </div>
                         <ul class="nav navbar-nav">
@@ -47,7 +46,7 @@
                             </li>
                             <li>
                                 <div class="button">
-                                    <button class="button btn-5">Sign in</button>
+                                    <button class="button btn-5 pop-up-button-sign-in">Sign up</button>
                                 </div>
                             </li>
                             <li>
@@ -60,22 +59,54 @@
                 </nav>
 
 
+                <div class="col-xs-12">
+
+                    <a href="">
+                        <li class="col-sm-2"></li>
+                    </a>
+                    <a href="">
+                        <li class="col-sm-2"></li>
+                    </a>
+                    <a href="">
+                        <li class="col-sm-2"></li>
+                    </a>
+                    <a href="">
+                        <li class="col-sm-2"></li>
+                    </a>
+                    <a href="">
+                        <li class="col-sm-2"></li>
+                    </a>
+                    <a href="">
+                        <li class="col-sm-2"></li>
+                    </a>
+
+                </div>
+
+
 
 
             </header>
 
         </div>
         <div class="wrapper">
-            
+
             <div class="pop-up">
-              <div class="pop-up-text">
-                <h1>FORMULAIRE</h1>
-                <p>some pop-up text</p>
-                <a href="#">Link</a>
-              </div>
+                <div class="pop-up-text">
+                    <div class="container-fluid">
+                        <form id="form">
+
+                            <input class="col-xs-12" name=pseudo id="pseudo" type="text" placeholder="PSEUDO">
+                            <input class="col-xs-12" name=email id="email" type="text" placeholder="E-MAIL">
+                            <input class="col-xs-12" name=MDP id="PASSWORD" type="text" placeholder="PASSWORD">
+
+                            <input class="col-xs-12" id="submit" type="submit" value="GO!">
+
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-     
+        </div>
+
     </main>
 </body>
 
@@ -89,11 +120,11 @@
     crossorigin="anonymous"></script>
 
 <script>
-$(document).ready(function () {
-  $('.pop-up-button').click(function () {
-    $('.wrapper').toggleClass('show');
-  });
-});
+    $(document).ready(function () {
+        $('.pop-up-button').click(function () {
+            $('.wrapper').toggleClass('show');
+        });
+    });
 
 </script>
 

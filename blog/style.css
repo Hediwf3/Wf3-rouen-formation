@@ -236,6 +236,13 @@ button:hover {
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
   }
+  .pop-up-button-sign-in:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+  }
   
   .pop-up {
     width: 50%;
@@ -245,29 +252,7 @@ button:hover {
     opacity: 0;
     transition: all 0.2s cubic-bezier(0.12, 0.13, 0.14, 0.15);
   }
-  .pop-up .pop-up-text {
-    text-align: center;
-    padding-bottom: 25px;
-    color: rgb(0, 0, 0);
-    pointer-events: none;
-    font-size: 18px;
-  }
-  .pop-up .pop-up-text h1 {
-    font-size: 1.8em;
-    padding-top: 10px;
-    font-weight: normal;
-  }
-  .pop-up .pop-up-text p {
-    font-size: 1.2em;
-    margin-top: 20px;
-  }
-  .pop-up .pop-up-text a {
-    color: #fff;
-    margin-top: 20px;
-    display: block;
-    text-decoration: none;
-    font-size: 20px;
-  }
+ 
   
   .show .pop-up {
     opacity: 1;
@@ -291,4 +276,140 @@ button:hover {
       line-height: 40px;
     }
   }
+
+
+/*--------------------------------------------- form --------------------------------------------------*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+#form input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
   
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+
+
+#form #submit {
+  
+  
+  padding: 0;
+  margin: -5px 0px 40px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+ 
+  
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
